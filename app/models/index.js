@@ -2,9 +2,9 @@ const dbConfig = require('../config/db.js');
 const Sequelize = require('sequelize');
 
 const sequelize = new Sequelize(dbConfig.db, dbConfig.user, dbConfig.password, {
-  host: dbConfig.host,
-  dialect: dbConfig.dialect,
-  operatorsAliases: false
+    host: dbConfig.host,
+    dialect: dbConfig.dialect,
+    operatorsAliases: false
 });
 
 const db = {};
